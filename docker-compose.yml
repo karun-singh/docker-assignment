@@ -1,5 +1,8 @@
-version: '3.8'
+version: '3.8' 
 
 services:
-  iudx_task:
-    image: sridharraokukkala/docker_task:v1 
+  docker_task:
+    image: sridharraokukkala/docker_task:v1
+    volumes:
+      - ./config:/app/config
+    restart: always
