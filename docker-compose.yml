@@ -1,0 +1,8 @@
+version: '3.8' 
+
+services:
+  docker_task:
+    image: sridharraokukkala/docker_task:v1
+    volumes:
+      - ./config:/app/config
+    restart: always
